@@ -126,12 +126,14 @@ public class Virus {
             int ultim_digit = Character.getNumericValue(nom_act.charAt(nom_act.length() - 1)) + 1;
             char nou_digit = (char) (ultim_digit + '0');
             String nou_nom = nom_act.substring(0, nom_act.length() - 1) + nou_digit;
+            v_mutat.nom=nou_nom;
 
             }               
             
             else {
 
                 nom_act=this.nom().concat("1");
+                v_mutat.nom=nom_act;
                 
             }
         
@@ -150,8 +152,6 @@ public class Virus {
         
     }
         
-    
-
     
     public static double generarNumeroAleatorio() {
         Random rand = new Random();

@@ -1,5 +1,3 @@
-
-
 public class FamiliaVirus {
     //Atributs
     private String nom;
@@ -20,8 +18,12 @@ public class FamiliaVirus {
     }
 
     public double obtenirTaxaMaximaTravesNom(String nom){
-        if()
-
+        if (nom.equals(this.nom)){
+            return taxa_variacio;
+        }
+        else{
+            return 0;
+        }
 
     }
 
